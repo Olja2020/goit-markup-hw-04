@@ -45,6 +45,10 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.main_header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .social_links {
   display: flex;
   list-style-type: none;
@@ -73,6 +77,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
+  background-position: center;
   margin: 0 auto;
 }
 
@@ -100,10 +105,14 @@ img {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  color: #404bbf;
+  position: relative;
   justify-content: center;
 }
 .main_li {
   margin-right: 40px;
+  color: #404bbf;
+  position: relative;
 }
 
 .main_li:last-child {
@@ -164,8 +173,12 @@ header {
   width: 100%;
   height: 4px;
   background-color: #404bbf;
+
+  bottom: -1px;
+  left: 0;
   position: absolute;
   bottom: 0px;
+  border-radius: 2px;
   display: block;
 }
 .main_title.title_main {
@@ -187,6 +200,11 @@ header {
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   padding: 24px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 .icon {
@@ -206,29 +224,24 @@ header {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  transform: translatey(100%);
-  transition: transform 250ms ease-in-out;
-}
-
 .li_section_four:hover .overlay {
   transform: translatey(0);
 }
 
-.overlay p {
-  color: #f4f4fd;
-  padding: 40px 32px 16px 32px;
-  margin: 0;
-  font-weight: 400;
-  line-height: 24px;
+.text_overlay {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .link_team.team_link {
@@ -376,9 +389,7 @@ header {
 .icon {
   fill: #f4f4fd;
 }
-.social-link {
-  height: 100%;
-}
+
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
@@ -388,4 +399,8 @@ header {
 }
 .li_footer {
   height: 40px;
+}
+.img_portfolio {
+  position: relative;
+  overflow: hidden;
 }
