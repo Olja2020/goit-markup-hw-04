@@ -155,10 +155,6 @@ header {
 }
 .ul_link li {
 }
-.menu_list .link:hover,
-.ul_link .link:hover {
-  color: #404bbf;
-}
 
 .header_block {
   margin-bottom: 8px;
@@ -171,6 +167,7 @@ header {
 .ul_link .link:active,
 .menu_list .link:active {
   position: relative;
+  color: #404bbf;
 }
 .menu_list .link:active::after {
   content: "";
@@ -423,6 +420,10 @@ header {
 .text {
   color: #434455;
 }
-.menu_list .link.link_a:not(.studio) {
+.menu_list .link_a:not(.studio) {
   color: #2e2f42;
+}
+.menu_list .link_a:hover,
+.ul_link .link:hover {
+  color: #404bbf;
 }
