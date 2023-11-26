@@ -423,6 +423,6 @@ header {
 .text {
   color: #434455;
 }
-.menu_list .link.link_a {
+.menu_list .link.link_a:not(.studio) {
   color: #2e2f42;
 }
