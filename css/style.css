@@ -643,7 +643,6 @@ header {
 .form_modal_input_icon {
   fill: rgba(46, 47, 66, 1);
 }
-
 .form_modal_input_checkbox:checked
   + .form_modal_label_checkbox
   > .review-form-own-checkbox {
