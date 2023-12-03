@@ -667,7 +667,6 @@ header {
   fill: #ffffff;
   opacity: 0;
 }
-
 .form_modal_input_checkbox:checked
   + .form_modal_label_checkbox
   .form_modal_input_icon_checkbox {
